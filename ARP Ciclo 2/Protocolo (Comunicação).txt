@@ -1,0 +1,31 @@
+#Curso de Engenharia de Software - UniEVANGÉLICA 
+#Disciplina de Sistemas Distribuidos 
+#Dev: Elias Soares
+#DATA: 23/05/2023 
+
+O protocolo de comunicação adotado será baseado em TCP e utilizará mensagens de texto simples. Cada mensagem será estruturada com um cabeçalho contendo informações sobre o tipo da mensagem e o comprimento do corpo da mensagem.
+
+O servidor ficará aguardando por mensagens dos clientes e processará cada mensagem de acordo com o seu tipo.
+
+Os tipos de mensagem definidos serão os seguintes:
+
+    LOGIN: mensagem enviada pelo cliente para autenticar-se no servidor. O corpo da mensagem conterá o nome de usuário e a senha em formato de texto simples.
+
+    LOGOUT: mensagem enviada pelo cliente para desconectar-se do servidor.
+
+    SEND_MESSAGE: mensagem enviada pelo cliente para enviar uma mensagem a um destinatário específico. O corpo da mensagem incluirá o nome do destinatário e o conteúdo da mensagem.
+
+    BROADCAST: mensagem enviada pelo cliente para enviar uma mensagem para todos os usuários conectados. O corpo da mensagem conterá o conteúdo da mensagem.
+
+    RECEIVE_MESSAGE: mensagem enviada pelo servidor para informar um cliente que uma nova mensagem foi recebida. O corpo da mensagem incluirá o nome do remetente e o conteúdo da mensagem.
+
+    ERROR: mensagem enviada pelo servidor para informar que ocorreu um erro. O corpo da mensagem conterá uma descrição do erro.
+
+O formato das mensagens será o seguinte:
+
+|------------------|------------------|--------------------|
+ Tipo	             Comprimento	Corpo da mensagem
+
+O campo "Tipo" terá um tamanho de 8 bytes e indicará o tipo da mensagem. O campo "Comprimento" terá um tamanho de 8 bytes e indicará o comprimento do corpo da mensagem em bytes. O campo "Corpo da mensagem" conterá os dados da mensagem.
+
+Essa estrutura de mensagens e o formato definido permitirão a comunicação efetiva entre o cliente e o servidor, facilitando o processamento e o gerenciamento das mensagens trocadas.

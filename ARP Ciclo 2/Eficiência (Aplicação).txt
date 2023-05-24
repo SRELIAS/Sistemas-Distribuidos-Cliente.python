@@ -1,0 +1,14 @@
+#Curso de Engenharia de Software - UniEVANGÉLICA 
+#Disciplina de Sistemas Distribuidos 
+#Dev: Elias Soares
+#DATA: 23/05/2023 
+
+Para avaliar o desempenho da aplicação em cenários de alta demanda, é recomendado realizar testes de carga utilizando ferramentas como o Apache JMeter ou o Tsung. Essas ferramentas permitem simular a conexão de vários usuários ao servidor de forma simultânea, enviando mensagens e avaliando o comportamento da aplicação sob uma carga intensa.
+
+Ao realizar os testes de carga, é essencial verificar se a aplicação é capaz de lidar com o aumento do tráfego sem sofrer sobrecarga ou apresentar instabilidade. Isso envolve analisar métricas de desempenho, como tempo de resposta, taxa de transferência e utilização de recursos do servidor.
+
+Durante os testes, é possível identificar gargalos, pontos fracos ou limitações na aplicação e, assim, realizar ajustes e otimizações para melhorar sua eficiência e escalabilidade.
+
+Ao obter resultados dos testes de carga, é importante analisar os dados coletados e compará-los com os requisitos de desempenho estabelecidos. Isso permitirá identificar possíveis melhorias a serem implementadas na aplicação, como otimizações de código, ajustes de configuração ou o uso de técnicas de balanceamento de carga.
+
+Garantir que a aplicação seja capaz de lidar com uma carga de tráfego pesada sem comprometer seu desempenho é fundamental para oferecer uma experiência satisfatória aos usuários e garantir a disponibilidade e estabilidade do sistema.
